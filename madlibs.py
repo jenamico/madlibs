@@ -28,6 +28,17 @@ def greet_person():
 
     return render_template("compliment.html", person=player, compliment=compliment)
 
+### our new functions below here:
+# route to handle whether or not user wants to play game
+@app.route('/game')
+def show_game_form():
+    player_response = request.args.get("startGame")
+    if player_response == "yes":
+        return render_template("game.html")
+    else:
+        return render_template("goodbye.html")
+
+    #return 
 
 if __name__ == '__main__':
     # debug=True gives us error messages in the browser and also "reloads" our web app
