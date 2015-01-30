@@ -1,0 +1,38 @@
+h1 {
+    color: navy;
+    margin-left: 20px;
+    text-align:center;
+}
+
+body{
+    text-align:center;
+    background-color: lightblue;
+}
+
+div {
+    width: 600px;
+    vertical-align: center;
+    margin: auto;
+
+}
+
+input[type=text] {
+    padding:5px;
+    border:2px
+    solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
